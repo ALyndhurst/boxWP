@@ -23,6 +23,9 @@ function site_scripts() {
     wp_enqueue_style( 'slick', get_template_directory_uri() . '/assets/slick/slick-theme.css', array(), '', 'all' );
     wp_enqueue_script( 'slickJS', get_template_directory_uri() . '/assets/slick/slick.js', array( 'jquery' ), '', true );
     wp_enqueue_style( 'fontAwesomeInclude', get_template_directory_uri() . '/assets/js/css/font-awesome.css', array(), '', 'all' );
+
+    // Smooth Scrolling Include
+    wp_enqueue_script( 'smoothMouse', get_template_directory_uri() . '/assets/js/jQuery.scrollSpeed.js', array( 'jquery' ), '', true );
     
     // Parallax Effects
 

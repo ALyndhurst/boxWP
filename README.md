@@ -6,6 +6,7 @@ Plugins Include:
 - Scroll Reveal
 - Sticky Header
 - Parallaxer
+- Smooth Mouse Scrolling
 
 Most plugins have been optimized for performance as well as integrated with the theme directly for ease-of-use.
 
