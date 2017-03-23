@@ -1,10 +1,10 @@
 {
   "name": "boxwp",
   "version": "2.0.0",
-  "description": "A blank JointsWP theme using Foundation 6",
+  "description": "A Modification Of The JointsWP Framework",
   "repository": {
     "type": "git",
-    "url": "https://github.com/simonjacks1986/wp-blank"
+    "url": "https://github.com/ALyndhurst/boxWP"
   },
   "author": "ALyndhurst",
   "license": "",
