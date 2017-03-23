@@ -38,3 +38,6 @@ require_once(get_template_directory().'/assets/functions/login.php');
 
 // Customize the WordPress admin
 // require_once(get_template_directory().'/assets/functions/admin.php'); 
+
+// Add The Smoother Scroller Option
+require_once(get_template_directory().'/assets/functions/smoothscroller.php'); 
