@@ -16,14 +16,14 @@ function sms_settings_init(  ) {
 
 	add_settings_section(
 		'sms_pluginPage_section', 
-		__( 'Your section description', 'wordpress' ), 
+		__( 'WORK IN PROGRESS', 'wordpress' ), 
 		'sms_settings_section_callback', 
 		'pluginPage'
 	);
 
 	add_settings_field( 
 		'sms_checkbox_field_0', 
-		__( 'Settings field description', 'wordpress' ), 
+		__( 'Enable Smooth Scrolling!', 'wordpress' ), 
 		'sms_checkbox_field_0_render', 
 		'pluginPage', 
 		'sms_pluginPage_section' 
@@ -45,7 +45,7 @@ function sms_checkbox_field_0_render(  ) {
 
 function sms_settings_section_callback(  ) { 
 
-	echo __( 'This section description', 'wordpress' );
+	echo __( 'This quick plugin will enable smooth scrolling on any website this theme is connected too.', 'wordpress' );
 
 }
 
