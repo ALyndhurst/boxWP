@@ -1,13 +1,19 @@
 <div class="error-container">
 	<div class="error">
 		<h3>Oh dear... You've reached a 404!</h3>
-		<button onclick="goBack()">BACK</button>
 		<img src="<?php bloginfo('template_url')?>/assets/images/login-logo.png" alt="">
+		<button onclick="goBack()">BACK</button>
 	</div>
 </div>
 
 <style>
+
 	@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
+
+	body{
+		margin:  0;
+	}
+
 	.error-container{
 		display: table;
 		text-align: center;
@@ -31,6 +37,7 @@
 		border: none;
 		font-size: 12px;
 		outline: none;
+		width: 100%;
 	}
 	button:hover{
 		cursor: pointer;
