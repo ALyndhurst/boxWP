@@ -1,31 +1,44 @@
-<?php get_header(); ?>
-			
-	<div id="content">
+<div class="error-container">
+	<div class="error">
+		<h3>Oh dear... You've reached a 404!</h3>
+		<button onclick="goBack()">BACK</button>
+		<img src="<?php bloginfo('template_url')?>/assets/images/login-logo.png" alt="">
+	</div>
+</div>
 
-		<div id="inner-content" class="row">
-	
-			<main id="main" class="large-8 medium-8 columns" role="main">
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
+	.error-container{
+		display: table;
+		text-align: center;
+		width: 100%;
+		min-height: 100%;
+	}
+	.error-container .error{
+		display: table-cell;
+		vertical-align: middle;
+		text-transform: uppercase;
+		font-family: 'Baloo Bhaina', cursive;
+	}
+	.h3, button, img{
+		display: block;
+		margin:  30px auto;
+	}
+	button{
+		padding: 12px 25px;
+		background: #3F9CFF;
+		color: #fff;
+		border: none;
+		font-size: 12px;
+		outline: none;
+	}
+	button:hover{
+		cursor: pointer;
+	}
+</style>
 
-				<article id="content-not-found">
-				
-					<header class="article-header">
-						<h1><?php _e("Epic 404 - Article Not Found", "jointswp"); ?></h1>
-					</header> <!-- end article header -->
-			
-					<section class="entry-content">
-						<p><?php _e("The article you were looking for was not found, but maybe try looking again!", "jointswp"); ?></p>
-					</section> <!-- end article section -->
-
-					<section class="search">
-					    <p><?php get_search_form(); ?></p>
-					</section> <!-- end search section -->
-			
-				</article> <!-- end article -->
-	
-			</main> <!-- end #main -->
-
-		</div> <!-- end #inner-content -->
-
-	</div> <!-- end #content -->
-
-<?php get_footer(); ?>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
