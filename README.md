@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/zurb/foundation-sites.svg?branch=develop)](https://travis-ci.org/zurb/foundation-sites)
 [![devDependencies Status](https://david-dm.org/zurb/foundation-sites/dev-status.svg)](https://david-dm.org/zurb/foundation-sites?type=dev)
 
 ## BoxWP
