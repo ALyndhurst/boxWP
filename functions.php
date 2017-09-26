@@ -39,5 +39,21 @@ require_once(get_template_directory().'/assets/functions/login.php');
 // Customize the WordPress admin
 // require_once(get_template_directory().'/assets/functions/admin.php'); 
 
-// Add The Smoother Scroller Option
-require_once(get_template_directory().'/assets/functions/smoothscroller.php'); 
+
+// Custom Options
+
+if( function_exists('acf_add_options_page') ) {
+
+    acf_add_options_page();
+
+}
+
+/*
+*  Change the Options Page menu to 'Theme Options'
+*/
+
+if( function_exists('acf_set_options_page_title') )
+{
+    acf_set_options_page_title( __('Theme Options') );
+}
+?>

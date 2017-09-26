@@ -7,21 +7,17 @@ all of your Sass files so they can compile into one
 CSS file. 
 
 ******************************************************************/
-
 // Import normalize from vendor files
 @import "../../vendor/foundation-sites/scss/vendor/normalize";
-
 // Import mixins
 @import "mixins";
-
 // Import local Foundation overrides - Don't link to Bower version as it will be overwritten whenever updated
 @import "settings";
-
 // Import foundation.scss from vendor files
 @import "../../vendor/foundation-sites/scss/foundation";
-
 // Import Motion-UI from vendor files
 @import "../../vendor/motion-ui/src/motion-ui";
+
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
@@ -74,29 +70,50 @@ CSS file.
 // APE68 MIXINS
 @mixin rounded($radius) {
   -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
 }
-
 
 // FONT STYLES
 $oil: #333;
 $white: #fff;
 
-.midtext {
-    text-align: center;   
+// Header Settings
+
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  .top-bar {
+    background-color: transparent;
+    .top-bar-left{
+      ul{
+        li{
+          color: $white;
+          font-weight: 300;
+          letter-spacing: 3px;
+        }
+      }
+    }
+    .top-bar-right{
+      ul{
+        li{
+          a{
+            color: $white;
+          }
+        }
+      }
+    }
+  }
 }
-.rightext {
-	text-align: right;
-}
-.leftext {
-	text-align: left;
-}
-.title {
-	font-weight:bold;
-	text-transform:uppercase;
-}
-.white { 
-	color:$white;
+
+// Footer Styles
+
+.footer{
+  background-color: $oil;
+  color: $white;
+  padding: 80px 0;
 }
