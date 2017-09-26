@@ -6,11 +6,8 @@ Template Name: Front Page
 
 <?php get_header(); ?>
 
-	<div id="content">
 
-		<div id="inner-content" class="row">
-
-		    <main id="main" class="large-12 medium-12 columns" role="main">
+		    <main class="main_container" role="main">
 
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -19,9 +16,5 @@ Template Name: Front Page
 				<?php endwhile; endif; ?>
 
 			</main> <!-- end #main -->
-
-		</div> <!-- end #inner-content -->
-
-	</div> <!-- end #content -->
 
 <?php get_footer(); ?>
