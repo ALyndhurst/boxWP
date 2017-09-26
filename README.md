@@ -1,14 +1,8 @@
 [![devDependencies Status](https://david-dm.org/zurb/foundation-sites/dev-status.svg)](https://david-dm.org/zurb/foundation-sites?type=dev)
 
-## BoxWP
+## X9
 
 A modification to the JointsWP Framework. Includes multiple plugins for animation control and browser compatibility.
-
-Plugins Include:
-- Scroll Reveal
-- Sticky Header
-- Parallaxer
-- Smooth Mouse Scrolling
 
 Most plugins have been optimized for performance as well as integrated with the theme directly for ease-of-use.
 
